@@ -1,0 +1,133 @@
+body {
+    background-image: url("../photos/bg_photo.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    font-size: larger;
+    font-family: cursive;
+}
+#out_f,fieldset {
+    width: 37%;
+    height: 80%;
+    margin: auto;
+    margin-top: 65px;
+    background-color: aliceblue;
+    padding-top: 0;
+    border-radius: 5px;
+}
+fieldset{
+    width: 40%;
+    height: 94%;
+    margin: auto;
+}
+form{
+    margin-left: 3%;
+}
+#heading {
+    margin:-1px 0px 23px -15px;
+    background-color: rgb(30,30,57);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    width: 105.17%;
+    border-radius: 5px;
+}
+#heading h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+.inp_dec {
+    height: 40px;
+    width: 100%;
+    display: block;
+    /* border: none; */
+    border: 0.01px solid rgb(68, 68, 255);
+    border-bottom: 2px solid rgb(68, 68, 255);
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: large;
+}
+.inp_dec:focus{
+    outline: none  !important;
+    border: 2px solid blue;
+}
+div{
+    width: 300px;
+    display: block;
+    margin-bottom: 20px;
+}
+div p{
+    margin-bottom: 5px;
+}
+textarea.inp_dec{
+    height: 150px;
+    width: 400px;
+}
+.flnm{
+    display: inline-block;
+    width: 250px;
+    margin-right: 20px;
+}
+#sub_btn{
+    color: white;
+    background-color: rgb(30, 30, 57);
+    height: 50px;
+    width: 120px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    border: 2px solid rgb(148, 84, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: cursive;
+}
+#sub_btn:hover{
+    box-shadow: 0px 0px 15px 0px yellow;
+}
+#sub_btn_login{
+    color: white;
+    background-color: rgb(30, 30, 57);
+    height: 50px;
+    width: 120px;
+    margin-left: 35%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(148, 84, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: cursive;
+}
+#sub_btn_login:hover{
+    box-shadow: 0px 0px 15px 0px yellow;
+}
+#orfi{
+    border-width: 2px 0 0 0;
+    height: 0px;
+    width: 80%;
+    border-radius: 0;
+    margin-left: 10px;
+}
+#orfi legend{
+    text-align: center;
+}
+.login_sm{
+    width: fit-content;
+    display: inline-block;
+    padding: 10px;
+    background-color: #4285f4;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 23px;
+}
+.login_sm div{
+    vertical-align: 3px;
+}
+.login_sm img{
+    float: left;
+    margin-right: 5px;
+}
+#google{
+    background-color: #dd4e41;
+}

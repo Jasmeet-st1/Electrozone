@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    text-align: justify;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#navbar {
+    background-color: rgb(31, 31, 52);
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+#navbar div {
+    display: inline-block;
+}
+
+#logo {
+    font-family: cursive;
+    font-size: 30px;
+    margin: 8px 5%;
+}
+
+#nav_menu {
+    float: right;
+    font-size: 20px;
+    padding: 10px 5% 2px 0;
+}
+
+#nav_menu div {
+    margin-right: 30px;
+    padding: 10px;
+    padding-top: 15px;
+    margin-top: -14px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+}
+#nav_menu a{
+    text-decoration: none;
+}
+
+#nav_menu div:hover {
+    background-color: rgb(78, 107, 131);
+}
+
+#select_nav {
+    background-color: rgb(109, 145, 177);
+}
+
+#lo_sig {
+    color: white;
+    background-color: rgb(54, 96, 133);
+    height: 37px;
+    width: 100px;
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lo_sig:hover {
+    box-shadow: 0px 0px 15px 0px white;
+}
+
+#nav_menu #loginbtn:hover {
+    background-color: rgb(31, 31, 52);
+}
+
+#xtra {
+    height: 50px;
+    color: white;
+    background-color: white;
+}
+
+#menu {
+    margin-bottom: 30px;
+}
+#big_img{
+    width: 100%;
+    height: 480px;
+    background-image: url('../photos/bg_photo1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    opacity: 0.5;
+    margin-bottom: 20px;
+
+}
+
+#outer {
+    /* display: flex; */
+    height: 480px;
+    width: 100%;
+    margin-bottom: 20px;
+    position:absolute;
+    top: 100px;
+}
+
+.word {
+    padding: 7% 0;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 10px 10px #111;
+    font: 700 normal 2.5em 'tahoma';
+    
+}
+
+#upper_heading {
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+#upper_text {
+    font-size: 1.3rem;
+    padding: 0 7%;
+    text-align: justify;
+}
+
+.sections {
+    /* margin: 0 4%; */
+    padding: 0 4%;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+
+h2 {
+    margin-top: 0;
+    text-shadow: 0 0 10px 10px #111;
+}
+
+.sections h2 {
+    /* text-align: center; */
+    font-size: 2rem;
+    color: rgb(57, 57, 57);
+}
+
+.sections h3 {
+    font-size: 1.7rem;
+    color: rgb(57, 57, 57);
+    vertical-align: middle;
+}
+
+.sections p {
+    font-size: 1.2rem;
+}
+
+.sections img {
+    width: 200px;
+    vertical-align: middle;
+}
+
+.image {
+    height: inherit;
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+.image img {
+    display: block;
+}
+
+.clearflix {
+    overflow: auto;
+}
+
+.diff_type_au {
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    background-color: white;
+    padding: 0.3% 1%;
+    box-sizing: border-box;
+    margin: 13px 0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 2px rgb(151, 143, 143);
+}
+
+.diff_type_au:nth-child(even) {
+    float: left;
+}
+
+.diff_type_au:nth-child(odd) {
+    float: right;
+}
+
+.diff_type_au:nth-child(even) .image {
+    float: right;
+}
+
+.diff_type_au:nth-child(odd) .image {
+    float: left;
+}
+
+#demo {
+    text-align: center;
+}
+
+#demo a {
+    color: rgb(1, 61, 130);
+}
+
+#footer {
+    clear: both;
+    background-color: rgb(30, 30, 57);
+    color: white;
+    width: 100%;
+}
+
+#btt a {
+    margin: auto;
+    padding: 5px 0;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(58, 58, 102);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.foot_cont {
+    display: inline-block;
+    width: 20%;
+    margin: 0px -1%;
+    vertical-align: top;
+    height: 200px;
+}
+
+.foot_cont h3 {
+    letter-spacing: -0.5px;
+}
+
+.foot_cont p {
+    padding-top: 2px;
+    margin-bottom: -6px;
+}
+
+.foot_cont p a,
+#ab_us a {
+    color: inherit;
+}
+
+#ab_us {
+    margin-left: 25%;
+}

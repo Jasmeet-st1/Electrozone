@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="./photos/icon.jpg">
+    <title>Feedback Form</title>
+    <meta name="author" content="Jasmeet Singh">
+    <link rel="stylesheet" type="text/css" href="./styles/lo_si_form.css">
+    
+
+</head>
+
+<body>
+
+    <fieldset>
+        <div id="heading"><h2>Feedback Form</h2></div>
+
+        <form>
+            <h4>Your Feedback is very Precious to Us</h4>
+
+            <div> <label for="name">Name</label>
+                <input type="text" name='fname' id="fname" class="inp_dec">
+            </div>
+            <div> <label for="email">Email ID</label>
+                <input type='email' name='email' id="email" class="inp_dec">
+            </div>
+            <div><label for="ph_num">Contact Number</label>
+                <input type='number' name='ph_num' id="ph_num" class="inp_dec">
+            </div>
+            <div><label for="query">Write your suugestions or query</label>
+                <textarea name="query" id="query" cols="30" rows="30" class="inp_dec"></textarea>
+            </div>
+
+            <button type='button' id="sub_btn">Submit</button>
+
+            <a href="./home_page.html" style="display:block; margin-top:-27px;">Home</a>
+        </form>
+    </fieldset>
+</body>
+<script>
+    var btn=document.querySelector('#sub_btn');
+    function abc(){
+        // setTimeout(5000);
+        alert("Thanks for your Feedback");
+        location.href="./home_page.html";
+    }
+    btn.addEventListener('click',function(){
+        setTimeout(abc,500);
+        // location.href="./home_page.html";
+    })
+</script>
+
+</html>
