@@ -1,3 +1,7 @@
+window.onresize = () => {
+    location.reload();
+}
+
 
 //slider images
 
@@ -13,29 +17,29 @@ slide_images_phone=document.querySelectorAll("#slider_inner_container_phone .sli
 
 let slide_container;
 let slide_images;
-console.log(scrWidth);
+// console.log(scrWidth);
 if(scrWidth>1435){
     slide_container=slide_container_laptop;
     slide_images=slide_images_laptop;
 }
-else if(scrWidth<1435 && scrWidth>760){
+else if(scrWidth<1435 && scrWidth>750){
     slide_container=slide_container_tablet;
     slide_images=slide_images_tablet;
 }
-else if(scrWidth<760){
+else if(scrWidth<450){
     slide_container=slide_container_phone;
     slide_images=slide_images_phone;
 }
-console.log(slide_container);
-console.log(slide_images);
+// console.log(slide_container);
+// console.log(slide_images);
 
 
 const prevbtn=document.querySelector(".prev");
 const nextbtn=document.querySelector(".next");
 
 let counter=1;
-let size=slide_images[0].clientWidth;
-console.log(size);
+let size=slide_container.clientWidth;
+// console.log(size);
 slide_container.style.transform="translateX("+(-size*counter)+"px)";
 
 setInterval(nextSlide,3000);
@@ -46,7 +50,7 @@ function nextSlide(){
     console.log(slide_images[counter].className);
     slide_container.style.transition="transform 0.8s ease-in-out";
     counter++;
-    console.log(counter);
+    // console.log(counter);
     slide_container.style.transform="translateX("+(-size*counter)+"px)";
 }
 
@@ -54,7 +58,7 @@ function prevSlide(){
     if(counter==0) return;
     slide_container.style.transition="transform 0.8s ease-in-out";
     counter--;
-    console.log(counter);
+    // console.log(counter);
     slide_container.style.transform="translateX("+(-size*counter)+"px)";
 }
 
@@ -75,7 +79,7 @@ slide_container.addEventListener('transitionend',()=>{
         console.log(slide_images[counter].className);
         slide_container.style.transition="none";
         counter= slide_images.length - counter;
-        console.log(counter);
+        // console.log(counter);
         slide_container.style.transform="translateX("+(-size*counter)+"px)";
         // counter=
     }
@@ -84,31 +88,28 @@ slide_container.addEventListener('transitionend',()=>{
 //timer
 let offerDivs = document.querySelectorAll(".oTime");
 
-var countDownDate = [
-    new Date("Aug 20, 2022 12:00:00").getTime(),
-    new Date("Aug 20, 2022 23:59:59").getTime(),
-    new Date("Aug 20, 2022 03:15:50").getTime(),
-    new Date("Aug 20, 2022 22:00:25").getTime(),
-]
+
 
 for(let i=0; i<offerDivs.length; i++){
-    
-    var x = setInterval(xyz, 1000,countDownDate[i],i);
+    var x = setInterval(xyz, 1000,i);
 }
 
-function xyz(countDownDate,i) {
-
+function xyz(i) {
+    
     var now = new Date().getTime();
-
-    var distance = countDownDate - now;
-
+    var end = new Date();
+    end.setUTCHours(18,29,59,999);
+    
+    var distance = end - now;
+    // console.log(end);
+    
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+    
     let Times=days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
+    
     if(days==0){
         Times = hours + "h " + minutes + "m " + seconds + "s ";
     }

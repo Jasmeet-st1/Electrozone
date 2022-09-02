@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="https://kit.fontawesome.com/4d3f045bbe.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ElectroZone - Electronics shopping website</title>
@@ -10,22 +11,35 @@
     <meta name="author" content="Jasmeet Singh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./styles/main_page.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
     <div id="navbar">
         <div id="logo">ElectroZone</div>
         <div id="nav_menu">
-            <a href="./home_page.html"><div id="select_nav">Home</div></a>
-            <a href="./about_us.html"><div>About Us</div></a>
-            <a href="./main_category_page.html"><div>Categories</div></a>
-            <a href="./demo_page.html"><div>Demo</div></a>
+            <a href="./home_page.html">
+                <div id="select_nav">Home</div>
+            </a>
+            <a href="./about_us.html">
+                <div>About Us</div>
+            </a>
+            <a href="./main_category_page.html">
+                <div>Categories</div>
+            </a>
+            <a href="./demo_page.html">
+                <div>Demo</div>
+            </a>
             <div id="loginbtn"><a href="./login_page.html"><button id="lo_sig">Login/Signup</button></a></div>
         </div>
     </div>
     <div id="xtra">Lorem</div>
-    <marquee behavior="scroll"><h2>Welcome to Electrozone- One stop solution to all your Electronics needs..</h2></marquee>
+    <marquee behavior="scroll">
+        <h2>Welcome to Electrozone- One stop solution to all your Electronics needs..</h2>
+    </marquee>
     <div id="menu">
         <div id="slider_container_outer">
             <div id="slider_inner_container_laptop" class="slider_inner_container">
@@ -53,8 +67,8 @@
                 <img src="./photos/home_photo/phone/pic_1.jpg" alt="" class="slider_image" id="duplicate_f">
             </div>
             <div id="buttons">
-                <span class="arrow prev" >&#10094</span>
-                <span class="arrow next" >&#10095</span>
+                <span class="arrow prev">&#10094</span>
+                <span class="arrow next">&#10095</span>
             </div>
         </div>
         <div class="deals_section">
@@ -138,29 +152,62 @@
                     <div>Rs <span class="cut">38999</span> 35,090/-</div>
                     <div class="offerTime">Offer ends in <span class="oTime"></span></div>
                 </div>
-                
+
             </div>
         </div>
-        <h2 id="demo">Having issues in using some appliances? <a href="demo_page.html">Watch our demo sessions..</a></h2>
+        <h2 id="demo">Having issues in using some appliances? <a href="demo_page.html">Watch our demo sessions..</a>
+        </h2>
     </div>
 
+    <div id="btt"><a href="#xtra" title="Back to Top">&#8593</a></div>
     <div id="footer">
-        <div id="btt"><a href="#xtra">Back To top</a></div>
-        <div id="ab_us" class="foot_cont">
-            <h3><a href="about_us.html" style="text-decoration: none;">Get to know About Us</a></h3>
+        <div id="ab_us">
+            <h3>Electrozone</h3>
+            <p>Electrozone houses everything you can possibly imagine, from trending
+                electronics like laptops, tablets, smartphones, and mobile accessories to high End PC's for your work.
+            </p>
         </div>
-        <div id="connec_us" class="foot_cont">
-            <h3>Connect with Us</h3>
-            <p>Instagram</p>
-            <p>Twitter</p>
-            <p>Facebook</p>
+        <div id="products">
+            <h3>Our Products</h3>
+            <p>Smartphones</p>
+            <p>Laptops</p>
+            <p>Washing Machines</p>
+            <p>PC</p>
+            <p>Mobile and Laptop Accessories</p>
+
         </div>
-        <div id="feedback" class="foot_cont">
-            <h3>Want to give Suggestion</h3>
-            <p>Please fill this <a href="feedback_form.html">form</a> to help us improve your experience</p>
+        <div id="contact_us">
+            <h3 id="contact">Contact</h3>
+            <p><i class="fa-solid fa-image-portrait fa-lg">&nbsp;</i>Jasmeet Singh</p>
+            <p><i class="fa-solid fa-envelope fa-lg">&nbsp;</i>jasmeet0333.be20@chitkara.edu.in</p>
+            <p><i class="fa-solid fa-phone fa-lg">&nbsp;</i> +91 95927-60119</p>
+            <div id="follow">
+                <h3>Follow Us</h3>
+                <a class="icon_l" href="https://www.instagram.com/jasmeet_s_taneja/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a class="icon_l" href="https://www.facebook.com/profile.php?id=100029370354350" target="_blank"><i
+                        class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a class="icon_l"><i class="fa-brands fa-square-google-plus fa-2xl"></i></a>
+                <a class="icon_l" href="https://www.linkedin.com/in/jasmeet-singh-85860a220/" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="icon_l"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+                <a class="icon_l" href="https://github.com/Jasmeet-st1" target="_blank"><i
+                        class="fa-brands fa-square-github fa-2xl"></i></a><br>
+
+
+            </div>
+        </div>
+        <div id="feedback">
+            <h3>Wan'na give Suggestions</h3>
+            <p>Please fill this <a href="./feedback_form.html">Feedback Form</a> to contribute to this website
+                improvement and to get your problem solved.</p>
+        </div>
+        <div id="cr">
+            <h4><i class="fa-solid fa-copyright">&nbsp;</i>Copyright by Jasmeet Singh</h4>
         </div>
     </div>
 </body>
 <script src="./scripts/home.js"></script>
+<!-- <script src="https://use.fontawesome.com/1d504e50ac.js"></script> -->
 
 </html>

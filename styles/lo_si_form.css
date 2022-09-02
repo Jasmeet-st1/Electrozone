@@ -22,7 +22,7 @@ fieldset{
 form{
     margin-left: 3%;
 }
-#heading {
+#heading,#heading_sig {
     margin:-1px 0px 23px -15px;
     background-color: rgb(30,30,57);
     color: white;
@@ -31,7 +31,7 @@ form{
     width: 105.17%;
     border-radius: 5px;
 }
-#heading h2{
+#heading h2,#heading_sig h2{
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 30px;
@@ -41,12 +41,12 @@ form{
     height: 40px;
     width: 100%;
     display: block;
-    /* border: none; */
     border: 0.01px solid rgb(68, 68, 255);
     border-bottom: 2px solid rgb(68, 68, 255);
     border-radius: 2px;
     padding-left: 10px;
     font-size: large;
+    color: rgb(0, 0, 85);
 }
 .inp_dec:focus{
     outline: none  !important;
@@ -116,10 +116,11 @@ textarea.inp_dec{
     width: fit-content;
     display: inline-block;
     padding: 10px;
-    background-color: #4285f4;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 40px;
+    border: 2px solid blue;
     cursor: pointer;
-    margin: 0 23px;
+    margin: 0 17px;
 }
 .login_sm div{
     vertical-align: 3px;
@@ -129,5 +130,59 @@ textarea.inp_dec{
     margin-right: 5px;
 }
 #google{
-    background-color: #dd4e41;
+    border:2px solid #dd4e41;
+}
+
+@media screen and (max-width:780px){
+    body{
+        background-position:top;
+        background-size:174%;
+
+    }
+    #out_f{
+        width: 64% !important;
+        margin-top: 50px !important;
+    }
+    fieldset{
+        width: 80% !important;
+    }
+    #heading{
+        width: 106.3%;
+        padding-top: 7px;
+        padding-bottom:8px;
+    }
+    #heading_sig{
+        width: 105.3%;
+        margin-bottom: 5px;
+    }
+    form h4{
+        margin:13px;
+    }
+    .inp_dec {
+        height: 35px;
+        width: 85%;
+    }
+    div{
+        margin-bottom: 10px;
+        
+    }
+    #sub_btn_login{
+        margin-top: 15px;
+        height: 40px;
+        width: 100px;
+    }
+    #sub_btn{
+        margin-bottom: 10px;
+        height: 40px;
+        width: 100px;
+    }
+    #orfi{
+        width: 100% !important;
+        margin-left: -20px;
+        margin-top:8px !important;
+    }
+    .login_sm{
+        margin: 0 0px;
+        padding:10px;
+    }
 }

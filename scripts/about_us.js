@@ -13,7 +13,7 @@ var wordflick = function () {
     if (forwards) {
       if (offset >= words[i].length) {
         ++skip_count;
-        console.log("skip count "+skip_count);
+        // console.log("skip count "+skip_count);
         if (skip_count == skip_delay) {
           forwards = false;
           skip_count = 0;
@@ -34,11 +34,11 @@ var wordflick = function () {
     if (skip_count == 0) {
       if (forwards) {
         offset++;
-        console.log("forward offset "+offset);
+        // console.log("forward offset "+offset);
       }
       else {
         offset--;
-        console.log("backward offset "+offset);
+        // console.log("backward offset "+offset);
       }
     }
     $('.word').text(part);
