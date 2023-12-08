@@ -18,8 +18,12 @@
 </head>
 
 <body>
+    <!-- <div id="xtra">Lorem</div> -->
+    <!-- <marquee behavior="scroll">
+        <h4>Welcome to Electrozone- One stop solution to all your Electronics needs..</h4>
+    </marquee> -->
     <div id="navbar">
-        <div id="logo">ElectroZone</div>
+        <div id="logo" onclick="location.href='index.html'"><i class="fa-solid fa-plug-circle-bolt"></i>ElectroZone</div>
         <div id="nav_menu">
             <a href="./index.html">
                 <div id="select_nav">Home</div>
@@ -35,11 +39,38 @@
             </a>
             <div id="loginbtn"><a href="./login_page.html"><button id="lo_sig">Login/Signup</button></a></div>
         </div>
+        <div id="nav-menu-mobile">
+            <div class="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
+            <div class="nav-menu-mobile-inner">
+                <a href="./index.html">
+                    <div id="select_nav">Home</div>
+                </a>
+                <a href="./about_us.html">
+                    <div>About Us</div>
+                </a>
+                <a href="./main_category_page.html">
+                    <div>Categories</div>
+                </a>
+                <a href="./demo_page.html">
+                    <div>Demo</div>
+                </a>
+                <hr>
+                <a href="./login_page.html">
+                    <div>Login/SignUp</div>
+                </a>
+            </div>
+        </div>
     </div>
-    <div id="xtra">Lorem</div>
-    <marquee behavior="scroll">
+    <!-- <div id="xtra">Lorem</div> -->
+    <div class="search-bar">
+        <div class="innersearch">
+            <input type="text" name="" id="search" placeholder="Search for 1000+ items...">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+        </div>
+    </div>
+    <!-- <marquee behavior="scroll">
         <h2>Welcome to Electrozone- One stop solution to all your Electronics needs..</h2>
-    </marquee>
+    </marquee> -->
     <div id="menu">
         <div id="slider_container_outer">
             <div id="slider_inner_container_laptop" class="slider_inner_container">
@@ -78,46 +109,49 @@
                     <h2>30% off on Beauty Products</h2>
                     <img src="./photos/dryer.jpg">
                     <p>Get upto 30% off on World's best beauty products</p>
-                </div>
-                <div class="diff_deals">
-                    <h2>30% off on Beauty Products</h2>
-                    <img src="./photos/dryer.jpg">
-                    <p>Get upto 30% off on World's best beauty products</p>
-                </div>
-                <div class="diff_deals">
-                    <h2>30% off on Beauty Products</h2>
-                    <img src="./photos/dryer.jpg">
-                    <p>Get upto 30% off on World's best beauty products</p>
-                </div>
-                <div class="diff_deals">
-                    <h2>30% off on Beauty Products</h2>
-                    <img src="./photos/dryer.jpg">
-                    <p>Get upto 30% off on World's best beauty products</p>
-                </div>
-                <div class="diff_deals">
-                    <h2>30% off on Beauty Products</h2>
-                    <img src="./photos/dryer.jpg">
-                    <p>Get upto 30% off on World's best beauty products</p>
+                    <button class="shop_btn">Shop Now</button>
                 </div>
                 <div class="diff_deals">
                     <h2>Great Warranty Period</h2>
                     <img src="./photos/phone.jpg">
                     <p>Exclusive 1 year warranty on Smartphones</p>
+                    <button class="shop_btn">Shop Now</button>
                 </div>
                 <div class="diff_deals">
                     <h2>Gaming Enhanced</h2>
                     <img src="./photos/gaming_dev.jpg">
                     <p>Get great discounts on Gaming Devices</p>
+                    <button class="shop_btn">Shop Now</button>
                 </div>
                 <div class="diff_deals">
                     <h2>Speed Up your Productivity</h2>
-                    <img src="./photos/PC.jpg">
+                    <img src="./photos/category_photos/laptop_3.jpeg">
                     <p>Get affordable and high performance laptops</p>
+                    <button class="shop_btn">Shop Now</button>
                 </div>
                 <div class="diff_deals">
                     <h2>Give your Kitchen a Modern look</h2>
                     <img src="./photos/mixer.jpg">
                     <p>Get modern kitchen appliances at affordable cost</p>
+                    <button class="shop_btn">Shop Now</button>
+                </div>
+                <div class="diff_deals">
+                    <h2>30% off on Beauty Products</h2>
+                    <img src="./photos/dryer.jpg">
+                    <p>Get upto 30% off on World's best beauty products</p>
+                    <button class="shop_btn">Shop Now</button>
+                </div>
+                <div class="diff_deals">
+                    <h2>Great Warranty Period</h2>
+                    <img src="./photos/phone.jpg">
+                    <p>Exclusive 1 year warranty on Smartphones</p>
+                    <button class="shop_btn">Shop Now</button>
+                </div>
+                <div class="diff_deals">
+                    <h2>Gaming Enhanced</h2>
+                    <img src="./photos/gaming_dev.jpg">
+                    <p>Get great discounts on Gaming Devices</p>
+                    <button class="shop_btn">Shop Now</button>
                 </div>
             </div>
         </div>
@@ -129,6 +163,7 @@
                     <img src="./photos/SGA52.jpg">
                     <p>Samsung Galaxy A52 128GB|6GB</p>
                     <div>Rs <span class="cut">27,999</span> 25,990/-</div>
+                    <button class="shop_btn_red shop_btn">Shop Now</button>
                     <div class="offerTime">Offer ends in <span class="oTime">dknbkjd</span></div>
                 </div>
                 <div class="diff_deals">
@@ -136,6 +171,7 @@
                     <img src="./photos/gaming_cont.jpg">
                     <p>PowerA Spectra Infinity Enhanced</p>
                     <div>Rs <span class="cut">4,597</span> 4,299/-</div>
+                    <button class="shop_btn_red shop_btn">Shop Now</button>
                     <div class="offerTime">Offer ends in <span class="oTime"></span></div>
                 </div>
                 <div class="diff_deals">
@@ -143,6 +179,7 @@
                     <img src="./photos/dryer1.jpg">
                     <p>Philips HP8100/46 1000W Compact Hair Dryer</p>
                     <div>Rs <span class="cut">1,090</span> 875/-</div>
+                    <button class="shop_btn_red shop_btn">Shop Now</button>
                     <div class="offerTime">Offer ends in <span class="oTime"></span></div>
                 </div>
                 <div class="diff_deals">
@@ -150,6 +187,7 @@
                     <img src="./photos/fridge.jpg">
                     <p>Samsung 324 L Frost Free Double Door 3 Star</p>
                     <div>Rs <span class="cut">38999</span> 35,090/-</div>
+                    <button class="shop_btn_red shop_btn">Shop Now</button>
                     <div class="offerTime">Offer ends in <span class="oTime"></span></div>
                 </div>
 
@@ -179,8 +217,7 @@
         <div id="contact_us">
             <h3 id="contact">Contact</h3>
             <p><i class="fa-solid fa-image-portrait fa-lg">&nbsp;</i>Jasmeet Singh</p>
-            <p><i class="fa-solid fa-envelope fa-lg">&nbsp;</i>jasmeet0333.be20@chitkara.edu.in</p>
-            <p><i class="fa-solid fa-phone fa-lg">&nbsp;</i> +91 95927-60119</p>
+            <p><i class="fa-solid fa-envelope fa-lg">&nbsp;</i>jasmeetst1@gmail.com</p>
             <div id="follow">
                 <h3>Follow Us</h3>
                 <a class="icon_l" href="https://www.instagram.com/jasmeet_s_taneja/" target="_blank"><i
