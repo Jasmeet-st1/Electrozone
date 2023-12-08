@@ -1,3 +1,4 @@
+
 var words = ['Electrozone...', "India's No.1 Electronics Shopping Website", 'One stop solution to all your Electronics needs..'],
   part,
   i = 0,
@@ -48,3 +49,18 @@ var wordflick = function () {
 $(document).ready(function () {
   wordflick();
 });
+
+let searchbtn=document.querySelector(".innersearch label");
+let searchinput=document.querySelector("#search");
+
+searchbtn.addEventListener('click',function(){
+    if(searchinput.value!=''){
+        location.href='single_category_page.html';
+    }
+});
+
+
+let topBtn=document.querySelector("#btt");
+topBtn.addEventListener('click',function(){
+    document.documentElement.scrollTop = 0;
+

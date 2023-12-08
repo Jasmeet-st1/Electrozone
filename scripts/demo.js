@@ -19,3 +19,19 @@ function playVideo(count){
     videos[count].style.display='block';
     playlogo[count].style.display='inline';
 }
+
+let searchbtn=document.querySelector(".innersearch label");
+let searchinput=document.querySelector("#search");
+
+searchbtn.addEventListener('click',function(){
+    if(searchinput.value!=''){
+        location.href='single_category_page.html';
+    }
+});
+
+let topBtn=document.querySelector("#btt");
+topBtn.addEventListener('click',function(){
+    document.documentElement.scrollTop = 0;
+
+});
+

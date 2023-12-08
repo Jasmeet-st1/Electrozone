@@ -127,3 +127,36 @@ function xyz(i) {
     
 
 }
+
+let hamburger=document.querySelector(".hamburger-icon");
+let hamburgerMenu=document.querySelector(".nav-menu-mobile-inner");
+hamburgerMenu.style.display="none";
+
+hamburger.addEventListener('click',function(){
+    if(hamburgerMenu.style.display=="none"){
+        hamburgerMenu.style.display="block";
+    }else{
+        hamburgerMenu.style.display="none";
+    }
+});
+
+let searchbtn=document.querySelector(".innersearch label");
+let searchinput=document.querySelector("#search");
+
+searchbtn.addEventListener('click',function(){
+    if(searchinput.value!=''){
+        location.href='single_category_page.html';
+    }
+});
+
+let shopBtn=document.querySelectorAll(".shop_btn");
+for(let i=0;i<shopBtn.length;i++){
+    shopBtn[i].addEventListener('click',function(){
+        location.href="./single_category_page.html";
+    });
+}
+
+let topBtn=document.querySelector("#btt");
+topBtn.addEventListener('click',function(){
+    document.documentElement.scrollTop = 0;
+});

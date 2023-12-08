@@ -34,12 +34,11 @@ body {
 /* NAVBAR*/
 
 #navbar {
-    /* background-color: rgb(31, 31, 52); */
-    background-color: rgb(0 11 50);
+    background-color: #00173c;
     color: white;
     width: 100%;
-    position: fixed;
-    top: 0px;
+    /* position: fixed; */
+    /* top: 0px; */
     z-index: 10;
 }
 
@@ -50,21 +49,22 @@ body {
 #logo {
     font-family: cursive;
     font-size: 30px;
-    margin: 8px 5%;
+    margin: 7px 5%;
+    cursor: pointer;
 }
 
 #nav_menu {
     float: right;
     font-size: 20px;
-    padding: 10px 5% 2px 0;
+    padding: 8px 5% 0px 0;
 }
 
 #nav_menu div {
     margin-right: 30px;
     padding: 10px;
     padding-top: 15px;
-    margin-top: -14px;
-    height: 30px;
+    margin-top: -16px;
+    height: 28px;
     cursor: pointer;
     color: white;
     transition: 0.4s ease all;
@@ -72,7 +72,7 @@ body {
 #nav_menu div::after{
     display:block;
   content: '';
-  padding-bottom: 19px;
+  padding-bottom: 15px;
   border-bottom: solid 3px white;  
   transform: scaleX(0);  
   transition: transform 0.3s ease-in-out;
@@ -94,11 +94,13 @@ body {
 }
 
 #lo_sig {
+    /* color: black; */
     color: white;
-    background-color: rgb(12 7 92);
+    /* background-color: rgb(0 55 71); */
+    background-color: rgba(255, 255, 255, 0);
     height: 37px;
     width: 100px;
-    border: 2px solid antiquewhite;
+    border: 1px solid antiquewhite;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -150,9 +152,29 @@ body {
 }
 
 #xtra {
-    height: 50px;
+    height: 55px;
     color: white;
     background-color: white;
+}
+
+.search-bar{
+    background-color: rgb(57 57 70);
+    padding:5px 0;
+}
+
+.innersearch{
+    width: 48%;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+}
+.innersearch input{
+    width: 95%;
+    border: none;
+    font-size: 1rem;
+}
+.innersearch input:focus{
+    outline: none;
 }
 
 #container {
@@ -164,6 +186,11 @@ body {
     font-size: 1.3em;
     color: white;
     text-align: center;
+    margin: 20px 0;
+}
+#heading *{
+    font-size: 1em;
+    margin: 10px;
 }
 
 #monitor {
@@ -172,7 +199,7 @@ body {
     display: inline-block;
     position: relative;
     border-top: 3px solid #888;
-    margin: 5%;
+    margin: 0 3% 5% 5%;
     margin-right: 3.5%;
     padding: 1.5% 1.5% 3% 1.5%;
     border-radius: 10px;
@@ -309,7 +336,7 @@ body {
     text-decoration: none;
 }
 #footer{
-    background-color: rgb(15, 15, 38);
+    background-color: rgb(0 24 40);
     color: white;
     width: 100%;
     padding: 0.4% 6% 0 6%;
