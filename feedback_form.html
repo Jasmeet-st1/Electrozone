@@ -1,53 +1,68 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-<head>
-    <link rel="icon" type="image/x-icon" href="./photos/icon.jpg">
-    <title>Feedback Form</title>
-    <meta name="author" content="Jasmeet Singh">
-    <link rel="stylesheet" type="text/css" href="./styles/lo_si_form.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/login_css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/login_css/signup_style.css">
+
+    <title>Feedback - Electrozone</title>
+  </head>
+  <body>
+  
+
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('photos/bg_2.jpg');"></div>
+    <div class="contents order-2 order-md-1">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <div class="mb-4">
+              <h3>Feedback</h3>
+              <p class="mb-4">Please give your valueable feedback as to improve your experience</p>
+            </div>
+            <form action="#" method="post">
+              <div class="form-group first">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+
+              </div>
+              <div class="form-group textar last">
+                <label for="feedback">Feedback</label>
+                <textarea name="" id="" cols="40" rows="4" style="border: none;" class="form-control" form="feedback"></textarea>
+
+              </div>
+
+              
+            </form>
+            <input type="submit" value="Submit" class="btn btn-block btn-primary" onclick="location.href='index.html'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+    
     
 
-</head>
-
-<body>
-
-    <fieldset>
-        <div id="heading_sig"><h2>Feedback Form</h2></div>
-
-        <form>
-            <h4>Your Feedback is very Precious to Us</h4>
-
-            <div> <label for="name">Name</label>
-                <input type="text" name='fname' id="fname" class="inp_dec">
-            </div>
-            <div> <label for="email">Email ID</label>
-                <input type='email' name='email' id="email" class="inp_dec">
-            </div>
-            <div><label for="ph_num">Contact Number</label>
-                <input type='number' name='ph_num' id="ph_num" class="inp_dec">
-            </div>
-            <div><label for="query">Write your suugestions or query</label>
-                <textarea name="query" id="query" cols="30" rows="30" class="inp_dec"></textarea>
-            </div>
-
-            <button type='button' id="sub_btn">Submit</button>
-
-            <a href="./index.html" style="display:block; margin-top:-27px;">Home</a>
-        </form>
-    </fieldset>
-</body>
-<script>
-    var btn=document.querySelector('#sub_btn');
-    function abc(){
-        // setTimeout(5000);
-        alert("Thanks for your Feedback");
-        location.href="./index.html";
-    }
-    btn.addEventListener('click',function(){
-        setTimeout(abc,500);
-        // location.href="./index.html";
-    })
-</script>
-
+  <script src="scripts/popper.min.js"></script>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
+  </body>
 </html>
